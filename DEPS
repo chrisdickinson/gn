@@ -18,7 +18,7 @@ allowed_hosts = [
 ]
 
 deps = {
-  'buildtools':
+  'gn/buildtools':
    Var('chromium_git') + '/chromium/buildtools.git' + '@' +  Var('buildtools_revision')
 }
 
@@ -40,10 +40,9 @@ hooks = [
     'pattern': '.',
     'action': [ 'download_from_google_storage',
                 '--no_resume',
-                '--platform=win32',
                 '--no_auth',
                 '--bucket', 'chromium-gn',
-                '-s', 'buildtools/win/gn.exe.sha1',
+                '-s', 'gn/buildtools/win/gn.exe.sha1',
     ],
   },
   {
@@ -51,10 +50,9 @@ hooks = [
     'pattern': '.',
     'action': [ 'download_from_google_storage',
                 '--no_resume',
-                '--platform=darwin',
                 '--no_auth',
                 '--bucket', 'chromium-gn',
-                '-s', 'buildtools/mac/gn.sha1',
+                '-s', 'gn/buildtools/mac/gn.sha1',
     ],
   },
   {
@@ -62,10 +60,9 @@ hooks = [
     'pattern': '.',
     'action': [ 'download_from_google_storage',
                 '--no_resume',
-                '--platform=linux*',
                 '--no_auth',
                 '--bucket', 'chromium-gn',
-                '-s', 'nojs/buildtools/linux64/gn.sha1',
+                '-s', 'gn/buildtools/linux64/gn.sha1',
     ],
   },
 ]
