@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "GN (\"Generate Ninja\") packaged for npm",
   "main": "index.js",
+  "bin": {
+    "gn": "./bin/gn",
+    "gn.exe": "./bin/gn.exe"
+  },
   "scripts": {
+    "preinstall": "node preinstall.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +22,7 @@
     "gyp"
   ],
   "author": "Chris Dickinson <chris@neversaw.us> (http://neversaw.us/)",
-  "license": "BSD-2-Clause",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/chrisdickinson/gn/issues"
   },
