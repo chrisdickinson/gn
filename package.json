@@ -1,0 +1,25 @@
+{
+  "name": "gn",
+  "version": "1.0.0",
+  "description": "GN (\"Generate Ninja\") packaged for npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/gn.git"
+  },
+  "keywords": [
+    "gn",
+    "metabuild",
+    "build",
+    "gyp"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us> (http://neversaw.us/)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/chrisdickinson/gn/issues"
+  },
+  "homepage": "https://github.com/chrisdickinson/gn#readme"
+}
