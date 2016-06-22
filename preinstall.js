@@ -6,7 +6,8 @@ const os = require('os')
 
 const REMAP = {
   'darwin': 'gn-mac',
-  'linux': 'gn-linux'
+  'linux': 'gn-linux',
+  'win32': 'gn.exe'
 }
 
 if (!(os.platform() in REMAP)) {

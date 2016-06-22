@@ -1,11 +1,10 @@
 {
   "name": "gn",
-  "version": "2.0.0-alpha1",
+  "version": "2.0.0-alpha2",
   "description": "GN (\"Generate Ninja\") packaged for npm",
   "main": "index.js",
   "bin": {
-    "gn": "./bin/gn",
-    "gn.exe": "./bin/gn.exe"
+    "gn": "./bin/gn"
   },
   "scripts": {
     "preinstall": "node preinstall.js",
