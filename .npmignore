@@ -1,4 +1,4 @@
 buildtools
 DEPS
-bin/gn*
+bin/gn
 build.js

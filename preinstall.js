@@ -9,13 +9,12 @@ const REMAP = {
   'linux': 'gn-linux'
 }
 
-
 if (!(os.platform() in REMAP)) {
   return
 }
 
-fs.symlink(
-  path.join(__dirname, 'bin', REMAP[os.platform()]),
-  path.join(__dirname, 'bin', 'gn'),
-  (err) => { if (err) throw err }
+fs.createReadStream(path.join(__dirname, 'bin', REMAP[os.platform()])).pipe(
+  fs.createWriteStream(path.join(__dirname, 'bin', 'gn'), {
+    mode: 0o744
+  })
 )
