@@ -1,6 +1,6 @@
 {
   "name": "gn",
-  "version": "1.0.0",
+  "version": "2.0.0-alpha",
   "description": "GN (\"Generate Ninja\") packaged for npm",
   "main": "index.js",
   "bin": {
