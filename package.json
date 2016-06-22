@@ -8,7 +8,7 @@
     "gn.exe": "./bin/gn.exe"
   },
   "scripts": {
-    "preinstall": "node preinstall.js"
+    "preinstall": "node preinstall.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
