@@ -5,7 +5,7 @@ vars = {
   'googlecode_url': 'http://%s.googlecode.com/svn',
   'chromium_git': 'https://chromium.googlesource.com',
   'github_git': 'https://github.com',
-  'buildtools_revision': '80b5126f91be4eb359248d28696746ef09d5be67',
+  'buildtools_revision': 'cbc33b9c0a9d1bb913895a4319a742c504a2d541',
 }
 
 # Only these hosts are allowed for dependencies in this DEPS file.
